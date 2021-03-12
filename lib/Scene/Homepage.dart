@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:web_parallax/Scene/FirstBlock/FirstBlock.dart';
+import 'package:web_parallax/Style/FontStyle.dart';
 
 import '../Style/size.dart';
 // import 'FirstBlock/FirstBlock.dart';
@@ -14,9 +16,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
-
     return Material(
       child: NotificationListener<ScrollNotification>(
         onNotification: updateOffsetAccordingToScroll,
@@ -24,6 +23,18 @@ class _HomePageState extends State<HomePage> {
           behavior: NoScrollGlow(),
           child: Stack(
             children: [
+              Positioned(
+                top: -.45 * offset,
+                width: displayWidth(context),
+                // child: FirstBlock(),
+                child: Container(
+                  width: displayWidth(context),
+                  child: Align(
+                    alignment: Alignment.topLeft,
+                    child: FirstBlock(),
+                  ),
+                ),
+              ),
               Positioned(
                 top: -.45 * offset,
                 // child: FirstBlock(),
@@ -34,39 +45,40 @@ class _HomePageState extends State<HomePage> {
                   width: displayWidth(context),
                 ),
               ),
-              Positioned(
-                bottom: -.45 * offset,
-                width: displayWidth(context),
-                child: Container(
-                  width: displayWidth(context),
-                  child: Column(
-                      // mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Flutter For Dev',
-                        ),
-                        SizedBox(height: 20),
-                        Text(
-                          'новости, статьи, дизайн',
-                        ),
-                      ]),
-                ),
-              ),
+              // Positioned(
+              //   bottom: -.45 * offset,
+              //   width: displayWidth(context),
+              //   child: Container(
+              //     width: displayWidth(context),
+              //     child: Column(
+              //         // mainAxisSize: MainAxisSize.min,
+              //         crossAxisAlignment: CrossAxisAlignment.start,
+              //         children: <Widget>[
+              //           Text(
+              //             'Flutter For Dev',
+              //           ),
+              //           SizedBox(height: 20),
+              //           Text(
+              //             'новости, статьи, дизайн',
+              //           ),
+              //         ]),
+              //   ),
+              // ),
               SingleChildScrollView(
+                clipBehavior: Clip.antiAliasWithSaveLayer,
                 child: Column(
                   children: [
                     SizedBox(
-                      height: height,
+                      height: displayHeight(context),
                     ),
                     Container(
-                      height: height,
-                      width: width,
+                      height: displayHeight(context),
+                      width: displayWidth(context),
                       color: Colors.blue,
                     ),
                     Container(
-                      height: height,
-                      width: width,
+                      height: displayHeight(context),
+                      width: displayWidth(context),
                       color: Colors.red,
                     )
                   ],

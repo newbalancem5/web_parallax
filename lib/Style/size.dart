@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 Size displaySize(BuildContext context) {
-  debugPrint('Size = ' + MediaQuery.of(context).size.toString());
+  MediaQuery.of(context).size.toString();
   return MediaQuery.of(context).size;
 }
 

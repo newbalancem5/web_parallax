@@ -51,11 +51,10 @@ flutter:
     - assets/images/image_main.jpg
     - assets/images/image_main.jpg
 
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Fixedsys
+      fonts:
+        - asset: assets/fonts/Fixedsys.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
