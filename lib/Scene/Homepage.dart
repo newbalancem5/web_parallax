@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:web_parallax/Scene/FirstBlock/FirstBlock.dart';
-import 'package:web_parallax/Style/FontStyle.dart';
-
-import '../Style/size.dart';
+import 'package:web_parallax/Style/size.dart';
 // import 'FirstBlock/FirstBlock.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +10,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   double offset = 0;
+  var img = 'assets/images/image_main.jpg';
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +26,7 @@ class _HomePageState extends State<HomePage> {
                 // child: FirstBlock(),
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
-                  image: 'assets/images/image_main2.png',
+                  image: img,
                   height: displayHeight(context),
                   width: displayWidth(context),
                 ),
