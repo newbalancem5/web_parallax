@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:web_parallax/Scene/FirstBlock/FirstBlock.dart';
-import 'package:web_parallax/Style/FontStyle.dart';
-
 import '../Style/size.dart';
+// import 'package:web_parallax/Scene/FirstBlock/FirstBlock.dart';
+// import 'package:web_parallax/Style/FontStyle.dart';
 // import 'FirstBlock/FirstBlock.dart';
 
 class HomePage extends StatefulWidget {
@@ -27,12 +27,9 @@ class _HomePageState extends State<HomePage> {
                 top: -.45 * offset,
                 width: displayWidth(context),
                 // child: FirstBlock(),
-                child: Container(
-                  width: displayWidth(context),
-                  child: Align(
-                    alignment: Alignment.topLeft,
-                    child: FirstBlock(),
-                  ),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  // child: FirstBlock(),
                 ),
               ),
               Positioned(
@@ -45,37 +42,34 @@ class _HomePageState extends State<HomePage> {
                   width: displayWidth(context),
                 ),
               ),
-              // Positioned(
-              //   bottom: -.45 * offset,
-              //   width: displayWidth(context),
-              //   child: Container(
-              //     width: displayWidth(context),
-              //     child: Column(
-              //         // mainAxisSize: MainAxisSize.min,
-              //         crossAxisAlignment: CrossAxisAlignment.start,
-              //         children: <Widget>[
-              //           Text(
-              //             'Flutter For Dev',
-              //           ),
-              //           SizedBox(height: 20),
-              //           Text(
-              //             'новости, статьи, дизайн',
-              //           ),
-              //         ]),
-              //   ),
-              // ),
+              Positioned(
+                // bottom: -.45 * offset,
+                width: displayWidth(context),
+                child: Container(
+                  width: displayWidth(context),
+                  child: Column(
+                      // mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Flutter For Dev',
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          'новости, статьи, дизайн',
+                        ),
+                      ]),
+                ),
+              ),
               SingleChildScrollView(
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 child: Column(
                   children: [
                     SizedBox(
                       height: displayHeight(context),
-                    ),
-                    Container(
-                      height: displayHeight(context),
                       width: displayWidth(context),
-                      color: Colors.blue,
                     ),
+                    FirstBlock(),
                     Container(
                       height: displayHeight(context),
                       width: displayWidth(context),
