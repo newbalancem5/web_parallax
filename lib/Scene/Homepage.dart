@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:web_parallax/Scene/FirstBlock/FirstBlock.dart';
-import '../Style/size.dart';
-// import 'package:web_parallax/Scene/FirstBlock/FirstBlock.dart';
-// import 'package:web_parallax/Style/FontStyle.dart';
+import 'package:web_parallax/Style/size.dart';
+import 'FirstBlock/FirstBlock.dart';
 // import 'FirstBlock/FirstBlock.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   double offset = 0;
+  var img = 'assets/images/image_main.jpg';
 
   @override
   Widget build(BuildContext context) {
@@ -25,40 +24,12 @@ class _HomePageState extends State<HomePage> {
             children: [
               Positioned(
                 top: -.45 * offset,
-                width: displayWidth(context),
-                // child: FirstBlock(),
-                child: Align(
-                  alignment: Alignment.topLeft,
-                  // child: FirstBlock(),
-                ),
-              ),
-              Positioned(
-                top: -.45 * offset,
                 // child: FirstBlock(),
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
-                  image: 'assets/images/image_main2.png',
+                  image: img,
                   height: displayHeight(context),
                   width: displayWidth(context),
-                ),
-              ),
-              Positioned(
-                // bottom: -.45 * offset,
-                width: displayWidth(context),
-                child: Container(
-                  width: displayWidth(context),
-                  child: Column(
-                      // mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Flutter For Dev',
-                        ),
-                        SizedBox(height: 20),
-                        Text(
-                          'новости, статьи, дизайн',
-                        ),
-                      ]),
                 ),
               ),
               SingleChildScrollView(
