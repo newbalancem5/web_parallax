@@ -25,18 +25,6 @@ class _HomePageState extends State<HomePage> {
             children: [
               Positioned(
                 top: -.45 * offset,
-                width: displayWidth(context),
-                // child: FirstBlock(),
-                child: Container(
-                  width: displayWidth(context),
-                  child: Align(
-                    alignment: Alignment.topLeft,
-                    child: FirstBlock(),
-                  ),
-                ),
-              ),
-              Positioned(
-                top: -.45 * offset,
                 // child: FirstBlock(),
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
@@ -45,25 +33,6 @@ class _HomePageState extends State<HomePage> {
                   width: displayWidth(context),
                 ),
               ),
-              // Positioned(
-              //   bottom: -.45 * offset,
-              //   width: displayWidth(context),
-              //   child: Container(
-              //     width: displayWidth(context),
-              //     child: Column(
-              //         // mainAxisSize: MainAxisSize.min,
-              //         crossAxisAlignment: CrossAxisAlignment.start,
-              //         children: <Widget>[
-              //           Text(
-              //             'Flutter For Dev',
-              //           ),
-              //           SizedBox(height: 20),
-              //           Text(
-              //             'новости, статьи, дизайн',
-              //           ),
-              //         ]),
-              //   ),
-              // ),
               SingleChildScrollView(
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 child: Column(
