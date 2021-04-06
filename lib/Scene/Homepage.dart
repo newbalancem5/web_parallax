@@ -10,8 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String images = 'assets/images/image_main.jpg';
   double offset = 0;
-  var img = 'assets/images/image_main.jpg';
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
                 // child: FirstBlock(),
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
-                  image: img,
+                  image: images,
                   height: displayHeight(context),
                   width: displayWidth(context),
                 ),

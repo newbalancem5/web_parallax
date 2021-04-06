@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout/layout.dart';
 
 import 'Scene/Homepage.dart';
 
@@ -10,9 +11,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter For Dev',
-      home: HomePage(),
+    return Layout(
+      child: MaterialApp(
+        title: 'Flutter For Dev',
+        home: HomePage(),
+      ),
     );
   }
 }
