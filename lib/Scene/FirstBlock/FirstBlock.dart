@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_parallax/Style/Decoration.dart';
 // import 'package:transparent_image/transparent_image.dart';
 // import 'package:web_parallax/Style/FontStyle.dart';
 import 'package:web_parallax/Style/size.dart';
@@ -20,7 +21,9 @@ class _FirstBlockState extends State<FirstBlock> {
         color: Colors.blue,
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Container(
-            // decoration: BoxDecorationStyle(context),
+            decoration: BoxDecoration(
+              borderRadius: ContainerDecoration.decoraionContainer(),
+            ),
             height: displayHeight(context) / 2,
             width: displayWidth(context) / 5,
             // color: Colors.black,
@@ -33,6 +36,7 @@ class _FirstBlockState extends State<FirstBlock> {
             child: Text('2'),
           ),
           Container(
+            decoration: ,
             height: displayHeight(context) / 2,
             width: displayWidth(context) / 5,
             color: Colors.indigo,
