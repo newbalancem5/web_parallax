@@ -1,15 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
-// abstract class BoxDecorationStyle {
-//   static const BoxDecoration decoration = BoxDecoration(
-//     color: Colors.black,
-//     borderRadius: BorderRadius.only(topLeft: 20),
-//   );
-// }
-
-abstract class BoxDecorationStyle {
-  static BoxDecoration info = BoxDecoration(
-    color: Colors.black,
-    borderRadius: BorderRadius.circular(20),
-  );
+class ContainerDecoration {
+  static List<BorderRadius> containerRadius = [
+    BorderRadius(radius: BorderRadius.circular(20))
+  ];
 }
