@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:transparent_image/transparent_image.dart';
-// import 'package:web_parallax/Style/FontStyle.dart';
 import 'package:web_parallax/Style/size.dart';
 
 class FirstBlock extends StatefulWidget {
