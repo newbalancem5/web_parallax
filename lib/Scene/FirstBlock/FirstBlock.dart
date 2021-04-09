@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_parallax/Style/size.dart';
+import 'package:web_parallax/Style/Decoration.dart';
 
 class FirstBlock extends StatefulWidget {
   @override
@@ -18,24 +19,22 @@ class _FirstBlockState extends State<FirstBlock> {
         color: Colors.blue,
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Container(
-            decoration: BoxDecoration(
-                // borderRadius: ContainerDecoration.decoraionContainer(),
-                ),
+            decoration: ContainerDecoration.containerRadius,
             height: displayHeight(context) / 2,
             width: displayWidth(context) / 5,
             // color: Colors.black,
             child: Text('1'),
           ),
           Container(
+            decoration: ContainerDecoration.containerSecondRadius,
             height: displayHeight(context) / 2,
             width: displayWidth(context) / 5,
-            color: Colors.green,
             child: Text('2'),
           ),
           Container(
+            decoration: ContainerDecoration.containerThreeRadius,
             height: displayHeight(context) / 2,
             width: displayWidth(context) / 5,
-            color: Colors.indigo,
             child: Text('3'),
           )
         ]),
