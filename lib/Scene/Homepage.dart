@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:web_parallax/Scroll/Scroll.dart';
 import 'package:web_parallax/Style/size.dart';
 import 'FirstBlock/FirstBlock.dart';
-// import 'FirstBlock/FirstBlock.dart';
 
 class HomePage extends StatefulWidget {
   @override

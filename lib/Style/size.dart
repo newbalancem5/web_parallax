@@ -15,13 +15,4 @@ double displayWidth(BuildContext context) {
   return displaySize(context).width;
 }
 
-class NoScrollGlow extends ScrollBehavior {
-  @override
-  Widget buildViewportChrome(
-    BuildContext context,
-    Widget child,
-    AxisDirection axisDirection,
-  ) {
-    return child;
-  }
-}
+
