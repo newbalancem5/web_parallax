@@ -14,5 +14,3 @@ double displayWidth(BuildContext context) {
   MediaQuery.of(context).size.width;
   return displaySize(context).width;
 }
-
-

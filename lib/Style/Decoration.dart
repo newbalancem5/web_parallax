@@ -3,14 +3,10 @@ import 'package:flutter/material.dart';
 class ContainerDecoration {
   static BoxDecoration containerRadius = BoxDecoration(
     borderRadius: BorderRadius.circular(30),
-    color: Colors.red,
   );
-  static BoxDecoration containerSecondRadius = BoxDecoration(
-    borderRadius: BorderRadius.circular(30),
-    color: Colors.green,
-  );
+  static BoxDecoration containerSecondRadius =
+      BoxDecoration(borderRadius: BorderRadius.circular(30));
   static BoxDecoration containerThreeRadius = BoxDecoration(
     borderRadius: BorderRadius.circular(30),
-    color: Colors.white,
   );
 }

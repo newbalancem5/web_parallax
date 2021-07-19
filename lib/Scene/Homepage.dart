@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:transparent_image/transparent_image.dart';
+import 'package:web_parallax/Scene/SecondBlock/SecondBlock.dart';
+// import 'package:transparent_image/transparent_image.dart';
+import 'package:web_parallax/Scene/WelcomeBlock/welcomeBlock.dart';
 import 'package:web_parallax/Scroll/Scroll.dart';
 import 'package:web_parallax/Style/size.dart';
-import 'FirstBlock/FirstBlock.dart';
+import 'package:web_parallax/Widgets/Footer/footer.dart';
+import 'FirstBlock/firstBlock.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,46 +13,42 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String images = 'assets/images/image_main.jpg';
+  String images = 'assets/images/image_main.png';
   double offset = 0;
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: NotificationListener<ScrollNotification>(
-        onNotification: updateOffsetAccordingToScroll,
-        child: ScrollConfiguration(
-          behavior: NoScrollGlow(),
-          child: Stack(
-            children: [
-              Positioned(
-                top: -.45 * offset,
-                // child: FirstBlock(),
-                child: FadeInImage.memoryNetwork(
-                  placeholder: kTransparentImage,
-                  image: images,
-                  height: displayHeight(context),
-                  width: displayWidth(context),
+    return SafeArea(
+      child: Material(
+        child: NotificationListener<ScrollNotification>(
+          onNotification: updateOffsetAccordingToScroll,
+          child: ScrollConfiguration(
+            behavior: NoScrollGlow(),
+            child: Stack(
+              children: [
+                Container(
+                  child: Text(
+                    'asd',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
-              ),
-              SingleChildScrollView(
-                clipBehavior: Clip.antiAliasWithSaveLayer,
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: displayHeight(context),
-                      width: displayWidth(context),
-                    ),
-                    FirstBlock(),
-                    Container(
-                      height: displayHeight(context),
-                      width: displayWidth(context),
-                      color: Colors.red,
-                    )
-                  ],
+                WelcomeBlock(),
+                SingleChildScrollView(
+                  clipBehavior: Clip.hardEdge,
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: displayHeight(context),
+                        width: displayWidth(context),
+                      ),
+                      FirstBlock(),
+                      SeconBlock(),
+                      Footer(),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
