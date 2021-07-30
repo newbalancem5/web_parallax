@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:web_parallax/Style/size.dart';
+import 'package:flutterfordev/Style/size.dart';
 
 // class ContainersStyle {
 //   final Color color;
@@ -33,14 +33,14 @@ import 'package:web_parallax/Style/size.dart';
 
 class Containers extends StatelessWidget {
   const Containers({
-    @required this.children,
-    this.width,
-    this.height,
-    this.size,
-    this.color,
-    this.borderRadius,
-    this.text,
-    this.inputText,
+    required this.children,
+    required this.width,
+    required this.height,
+    required this.size,
+    required this.color,
+    required this.borderRadius,
+    required this.text,
+    required this.inputText,
   });
 
   final Widget children;

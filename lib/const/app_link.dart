@@ -3,4 +3,5 @@ class LinkSocial {
   static const String github = "https://github.com/newbalancem5/flutter_info";
   static const String telegram = "https://t.me/FlutterDevRu";
   static const String vk = "https://vk.com/flutterfordev";
+  static const String mytg = "https://t.me/newbalancem5";
 }

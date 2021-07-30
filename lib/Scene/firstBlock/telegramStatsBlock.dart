@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_parallax/Style/FontStyle.dart';
+import 'package:flutterfordev/Style/FontStyle.dart';
 
 class TeLegramStatsPage extends StatefulWidget {
   @override
@@ -7,7 +7,6 @@ class TeLegramStatsPage extends StatefulWidget {
 }
 
 class _TeLegramStatsPageState extends State<TeLegramStatsPage> {
-  @override
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:web_parallax/Style/FontStyle.dart';
-import 'package:web_parallax/Style/size.dart';
-import 'package:web_parallax/const/app_images.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutterfordev/Style/FontStyle.dart';
+import 'package:flutterfordev/Style/size.dart';
+import 'package:flutterfordev/const/app_images.dart';
 
 class WelcomeBlock extends StatelessWidget {
   // const WelcomeBlock({ Key? key }) : super(key: key)
@@ -26,8 +27,10 @@ class WelcomeBlock extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          child: Text(''),
+        Icon(
+          FontAwesomeIcons.arrowAltCircleDown,
+          size: 60,
+          color: Colors.black38,
         ),
       ],
     );

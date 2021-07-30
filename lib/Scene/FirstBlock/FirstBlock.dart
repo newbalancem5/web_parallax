@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:web_parallax/Style/FontStyle.dart';
-import 'package:web_parallax/Style/size.dart';
-import 'package:web_parallax/const/app_link.dart';
+import 'package:flutterfordev/Style/FontStyle.dart';
+import 'package:flutterfordev/Style/size.dart';
+import 'package:flutterfordev/const/app_link.dart';
+// import 'package:flutterfordev/domain/api_clients/api_client.dart';
 
 class FirstBlock extends StatefulWidget {
   @override
@@ -43,7 +44,7 @@ class _FirstBlockState extends State<FirstBlock> {
           Center(
             child: Container(
               child: Padding(
-                padding: EdgeInsets.only(top: displayHeight(context) / 6),
+                padding: EdgeInsets.only(top: displayHeight(context) / 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   // height: displayHeight(context) / 2,
@@ -108,6 +109,16 @@ class _FirstBlockState extends State<FirstBlock> {
                     ),
                   ],
                 ),
+              ),
+            ),
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 180),
+              child: Icon(
+                FontAwesomeIcons.arrowAltCircleDown,
+                size: 60,
+                color: Colors.black54,
               ),
             ),
           ),

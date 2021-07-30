@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:web_parallax/Scene/SecondBlock/SecondBlock.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutterfordev/Scene/SecondBlock/SecondBlock.dart';
 // import 'package:transparent_image/transparent_image.dart';
-import 'package:web_parallax/Scene/WelcomeBlock/welcomeBlock.dart';
-import 'package:web_parallax/Scroll/Scroll.dart';
-import 'package:web_parallax/Style/size.dart';
-import 'package:web_parallax/Widgets/Footer/footer.dart';
+import 'package:flutterfordev/Scene/WelcomeBlock/welcomeBlock.dart';
+import 'package:flutterfordev/Scroll/Scroll.dart';
+import 'package:flutterfordev/Style/size.dart';
+// import 'package:flutterfordev/Widgets/Footer/footer.dart';
 import 'FirstBlock/firstBlock.dart';
 
 class HomePage extends StatefulWidget {
@@ -43,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       FirstBlock(),
                       SeconBlock(),
-                      Footer(),
+                      // Footer(),
                     ],
                   ),
                 ),
