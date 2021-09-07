@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfordev/Style/_main.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutterfordev/Style/Decoration.dart';
-import 'package:flutterfordev/Style/FontStyle.dart';
-import 'package:flutterfordev/Style/size.dart';
-import 'package:flutterfordev/const/app_link.dart';
+import 'package:flutterfordev/const/_const.dart';
 
-class SeconBlock extends StatefulWidget {
+class SecondBlock extends StatefulWidget {
   @override
-  _SeconBlockState createState() => _SeconBlockState();
+  _SecondBlockState createState() => _SecondBlockState();
 }
 
-class _SeconBlockState extends State<SeconBlock> {
+class _SecondBlockState extends State<SecondBlock> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,7 +22,7 @@ class _SeconBlockState extends State<SeconBlock> {
             Container(
               decoration: ContainerDecoration.containerRadius,
               height: displayHeight(context) / 4,
-              width: displayWidth(context) / 4,
+              width: displayWidth(context) / 1,
               child: Column(
                 children: [
                   Text(
@@ -39,7 +37,7 @@ class _SeconBlockState extends State<SeconBlock> {
                         launch(LinkSocial.mytg);
                       },
                       child: Text(
-                        "Связаться",
+                        'Связаться',
                         style: FontStyleText.text,
                       ),
                     ),

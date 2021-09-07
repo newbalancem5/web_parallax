@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfordev/Style/_main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutterfordev/Style/FontStyle.dart';
-import 'package:flutterfordev/Style/size.dart';
-import 'package:flutterfordev/const/app_images.dart';
+import 'package:flutterfordev/const/_images.dart';
 
 class WelcomeBlock extends StatelessWidget {
   // const WelcomeBlock({ Key? key }) : super(key: key)
@@ -22,8 +21,8 @@ class WelcomeBlock extends StatelessWidget {
           child: Container(
             child: Image.asset(
               AppImages.ffdlogo,
-              width: displayWidth(context) / 1.2,
-              height: displayHeight(context) / 1.2,
+              width: displayWidth(context) / 1.3,
+              height: displayHeight(context) / 1.3,
             ),
           ),
         ),

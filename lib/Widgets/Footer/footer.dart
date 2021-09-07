@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfordev/Style/size.dart';
+import 'package:flutterfordev/Style/helpers/_size.dart';
 
 class Footer extends StatefulWidget {
   // const Footer({ Key? key }) : super(key: key);

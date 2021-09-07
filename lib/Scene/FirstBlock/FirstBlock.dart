@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfordev/Style/_main.dart';
+import 'package:flutterfordev/const/_const.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutterfordev/Style/FontStyle.dart';
-import 'package:flutterfordev/Style/size.dart';
-import 'package:flutterfordev/const/app_link.dart';
 // import 'package:flutterfordev/domain/api_clients/api_client.dart';
 
 class FirstBlock extends StatefulWidget {
@@ -27,7 +26,7 @@ class _FirstBlockState extends State<FirstBlock> {
                 padding: EdgeInsets.only(top: displayHeight(context) / 4),
                 child: Container(
                   child: Text(
-                    "Где нас можно почитать.",
+                    'Где нас можно почитать.',
                     style: FontStyleText.title,
                     textAlign: TextAlign.center,
                   ),
@@ -114,7 +113,7 @@ class _FirstBlockState extends State<FirstBlock> {
           ),
           Container(
             child: Padding(
-              padding: const EdgeInsets.only(top: 180),
+              padding: const EdgeInsets.only(top: 104),
               child: Icon(
                 FontAwesomeIcons.arrowAltCircleDown,
                 size: 60,

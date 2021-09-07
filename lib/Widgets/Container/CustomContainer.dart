@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutterfordev/Style/size.dart';
+import 'package:flutterfordev/Style/helpers/_size.dart';
 
 // class ContainersStyle {
 //   final Color color;

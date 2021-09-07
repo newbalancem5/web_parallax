@@ -4,7 +4,7 @@ import 'package:flutterfordev/Scene/SecondBlock/SecondBlock.dart';
 // import 'package:transparent_image/transparent_image.dart';
 import 'package:flutterfordev/Scene/WelcomeBlock/welcomeBlock.dart';
 import 'package:flutterfordev/Scroll/Scroll.dart';
-import 'package:flutterfordev/Style/size.dart';
+import 'package:flutterfordev/Style/helpers/_size.dart';
 // import 'package:flutterfordev/Widgets/Footer/footer.dart';
 import 'FirstBlock/firstBlock.dart';
 
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                         width: displayWidth(context),
                       ),
                       FirstBlock(),
-                      SeconBlock(),
+                      SecondBlock(),
                       // Footer(),
                     ],
                   ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfordev/Style/FontStyle.dart';
+import 'package:flutterfordev/Style/abstract/_fontstyle.dart';
 
 class TeLegramStatsPage extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class _TeLegramStatsPageState extends State<TeLegramStatsPage> {
       children: [
         Container(
           child: Text(
-            "Нас в телеграме: 1601",
+            'Нас в телеграме: 1601',
             style: FontStyleText.text,
           ),
         ),
