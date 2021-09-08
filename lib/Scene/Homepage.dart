@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutterfordev/Scene/SecondBlock/SecondBlock.dart';
-// import 'package:transparent_image/transparent_image.dart';
 import 'package:flutterfordev/Scene/WelcomeBlock/welcomeBlock.dart';
 import 'package:flutterfordev/Scroll/Scroll.dart';
-import 'package:flutterfordev/Style/helpers/_size.dart';
-// import 'package:flutterfordev/Widgets/Footer/footer.dart';
+import 'package:flutterfordev/style/_main.dart';
+
 import 'FirstBlock/firstBlock.dart';
 
 class HomePage extends StatefulWidget {
