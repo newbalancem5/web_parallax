@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfordev/Style/_main.dart';
+import 'package:flutterfordev/const/_const.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutterfordev/const/_images.dart';
 
 class WelcomeBlock extends StatelessWidget {
   // const WelcomeBlock({ Key? key }) : super(key: key)
@@ -12,7 +12,7 @@ class WelcomeBlock extends StatelessWidget {
       children: [
         Container(
           child: Text(
-            'Flutter For Dev - самое интересное в мире Flutter ',
+            ffdtext,
             style: FontStyleText.title,
             textAlign: TextAlign.center,
           ),

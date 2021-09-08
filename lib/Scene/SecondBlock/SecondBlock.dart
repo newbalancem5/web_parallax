@@ -26,7 +26,7 @@ class _SecondBlockState extends State<SecondBlock> {
               child: Column(
                 children: [
                   Text(
-                    'Если вы хотите разместить рекламу, вакансию или анонс то пишите мне.',
+                    contactme,
                     style: FontStyleText.info,
                     textAlign: TextAlign.center,
                   ),
@@ -37,7 +37,7 @@ class _SecondBlockState extends State<SecondBlock> {
                         launch(LinkSocial.mytg);
                       },
                       child: Text(
-                        'Связаться',
+                        callme,
                         style: FontStyleText.text,
                       ),
                     ),

@@ -26,7 +26,7 @@ class _FirstBlockState extends State<FirstBlock> {
                 padding: EdgeInsets.only(top: displayHeight(context) / 4),
                 child: Container(
                   child: Text(
-                    'Где нас можно почитать.',
+                    socialme,
                     style: FontStyleText.title,
                     textAlign: TextAlign.center,
                   ),
