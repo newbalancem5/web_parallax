@@ -25,12 +25,6 @@ class _HomePageState extends State<HomePage> {
             behavior: NoScrollGlow(),
             child: Stack(
               children: [
-                Container(
-                  child: Text(
-                    'asd',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
                 WelcomeBlock(),
                 SingleChildScrollView(
                   clipBehavior: Clip.hardEdge,

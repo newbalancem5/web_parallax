@@ -13,9 +13,10 @@ class ContainerDecoration {
   );
 
   static BoxDecoration customconntainerdecoration = BoxDecoration(
-      border: Border.all(
-        color: Colors.black,
-        width: 2.0,
-      ),
-      borderRadius: BorderRadius.circular(20));
+    border: Border.all(
+      color: Colors.black,
+      width: 2.0,
+    ),
+    borderRadius: BorderRadius.circular(20),
+  );
 }
