@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfordev/Scene/SecondBlock/SecondBlock.dart';
-import 'package:flutterfordev/Scene/WelcomeBlock/welcomeBlock.dart';
-import 'package:flutterfordev/Scroll/Scroll.dart';
-import 'package:flutterfordev/style/_main.dart';
 
-import 'FirstBlock/firstBlock.dart';
+import 'package:flutterfordev/Scroll/Scroll.dart';
+import 'package:flutterfordev/scene/scene_main.dart';
+import 'package:flutterfordev/style/_main.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,7 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String images = 'assets/images/image_main.png';
   double offset = 0;
 
   @override
