@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfordev/Style/_main.dart';
+import 'package:flutterfordev/domain/api_clients/api_client.dart';
+import 'package:flutterfordev/domain/entity/telegraminf.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutterfordev/const/_const.dart';
 

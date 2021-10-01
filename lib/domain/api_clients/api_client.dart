@@ -1,21 +1,24 @@
 import 'dart:convert';
 import 'dart:io';
-
+import 'package:http/http.dart' as http;
 import 'package:flutterfordev/domain/entity/telegraminf.dart';
 
 class ApiClient {
   final client = HttpClient();
+  String key = '634693ccec46e47ec5c564940ea1ef64';
 
   Future<List<Post>> getPosts() async {
     final url = Uri.parse(
-        'https://api.tgstat.ru/channels/stat?token=f6ecaec9b56acf18ce0b8b96df86b714&channelId=@flutterdevru');
+        'https://api.tgstat.ru/channels/stat?token=$key&channelId=@flutterdevru');
 
     final request = await client.getUrl(url);
-    final response = await request.close();
+    final response = await http.get(url);
+    print(response);
+    // final response = await request.close();
 
-    final jsonStrings = await response.transform(utf8.decoder).toList();
-    final jsonString = jsonStrings.join();
-    final json = jsonDecode(jsonString) as List<dynamic>;
+    final jsonStrings = await request.toString();
+    final jsonString = jsonStrings.length;
+    final json = null;
     final info = json
         .map((dynamic e) => Post.fromJson(e as Map<String, dynamic>))
         .toList();
