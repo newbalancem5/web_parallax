@@ -10,11 +10,7 @@ class Post {
   final String title;
   final String info;
 
-  Post(
-      {required this.id,
-      required this.title,
-      required this.info,
-      required this.participants_count});
+  Post({this.id, this.title, this.info, this.participants_count});
 
   factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
   Map<String, dynamic> toJson() => _$PostToJson(this);
