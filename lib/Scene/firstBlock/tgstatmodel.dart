@@ -9,13 +9,13 @@ class TgStatsModel extends ChangeNotifier {
 class TgstatProvider extends InheritedNotifier {
   final TgStatsModel model;
   TgstatProvider({
-    Key? key,
-    required this.child,
-    required this.model,
+    Key key,
+    this.child,
+    this.model,
   }) : super(key: key, child: child);
   final Widget child;
 
-  static TgstatProvider? of(BuildContext context) {
+  static TgstatProvider of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<TgstatProvider>();
   }
 

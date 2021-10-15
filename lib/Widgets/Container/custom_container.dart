@@ -33,14 +33,14 @@ import 'package:flutterfordev/Style/helpers/_size.dart';
 
 class Containers extends StatelessWidget {
   const Containers({
-    required this.children,
-    required this.width,
-    required this.height,
-    required this.size,
-    required this.color,
-    required this.borderRadius,
-    required this.text,
-    required this.inputText,
+    this.children,
+    this.width,
+    this.height,
+    this.size,
+    this.color,
+    this.borderRadius,
+    this.text,
+    this.inputText,
   });
 
   final Widget children;
