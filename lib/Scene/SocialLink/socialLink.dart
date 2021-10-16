@@ -12,16 +12,16 @@ class _SocialLinkState extends State<SocialLink> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        SizedBox(
           child: Text('Telegram'),
         ),
-        Container(
+        SizedBox(
           child: Text('Github'),
         ),
-        Container(
+        SizedBox(
           child: Text('Twitter'),
         ),
-        Container(
+        SizedBox(
           child: Text(' Vk'),
         ),
       ],
