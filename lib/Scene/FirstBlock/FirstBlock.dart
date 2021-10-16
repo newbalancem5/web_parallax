@@ -21,10 +21,10 @@ class _FirstBlockState extends State<FirstBlock> {
       child: Column(
         children: [
           Center(
-            child: Container(
+            child: SizedBox(
               child: Padding(
                 padding: EdgeInsets.only(top: displayHeight(context) / 4),
-                child: Container(
+                child: SizedBox(
                   child: Text(
                     socialme,
                     style: FontStyleText.title,
@@ -36,12 +36,12 @@ class _FirstBlockState extends State<FirstBlock> {
           ),
           Padding(
             padding: EdgeInsets.only(top: displayHeight(context) / 6),
-            child: Container(
+            child: SizedBox(
                 // child: TeLegramStatsPage(),
                 ),
           ),
           Center(
-            child: Container(
+            child: SizedBox(
               child: Padding(
                 padding: EdgeInsets.only(top: displayHeight(context) / 10),
                 child: Row(
@@ -69,11 +69,6 @@ class _FirstBlockState extends State<FirstBlock> {
                     ),
                     Container(
                       padding: EdgeInsets.only(left: 10),
-                      // offsets: 'offset-0',
-                      // orders: ' order-sm-2',
-                      // fit: FlexFit.tight,
-                      // absoluteSizes: true,
-                      // sizes: 'col-1',
                       child: IconButton(
                         splashRadius: 1,
                         iconSize: 60,
@@ -88,11 +83,6 @@ class _FirstBlockState extends State<FirstBlock> {
                     ),
                     Container(
                       padding: EdgeInsets.only(left: 10),
-                      // offsets: 'offset-0',
-                      // orders: ' order-2',
-                      // fit: FlexFit.loose,
-                      // absoluteSizes: true,
-                      // sizes: 'col-1 col-sm ',
                       child: IconButton(
                         alignment: Alignment.center,
                         iconSize: 60,
@@ -111,7 +101,7 @@ class _FirstBlockState extends State<FirstBlock> {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             child: Padding(
               padding: const EdgeInsets.only(top: 104),
               child: Icon(
