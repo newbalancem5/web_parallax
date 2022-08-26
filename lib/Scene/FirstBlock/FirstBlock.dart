@@ -3,6 +3,8 @@ import 'package:flutterfordev/Style/_main.dart';
 import 'package:flutterfordev/const/_const.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../domain/api_clients/api_client.dart';
 // import 'package:flutterfordev/domain/api_clients/api_client.dart';
 
 class FirstBlock extends StatefulWidget {
@@ -63,7 +65,10 @@ class _FirstBlockState extends State<FirstBlock> {
                           size: 60,
                         ),
                         onPressed: () {
-                          launch(LinkSocial.telegram);
+                          ApiClient();
+                          launchUrl(
+                            Uri.parse(LinkSocial.telegram),
+                          );
                         },
                       ),
                     ),
@@ -77,7 +82,9 @@ class _FirstBlockState extends State<FirstBlock> {
                           size: 60,
                         ),
                         onPressed: () {
-                          launch(LinkSocial.github);
+                          launchUrl(
+                            Uri.parse(LinkSocial.github),
+                          );
                         },
                       ),
                     ),
@@ -92,7 +99,9 @@ class _FirstBlockState extends State<FirstBlock> {
                           size: 60,
                         ),
                         onPressed: () {
-                          launch(LinkSocial.twitter);
+                          launchUrl(
+                            Uri.parse(LinkSocial.twitter),
+                          );
                         },
                       ),
                     ),
@@ -105,7 +114,7 @@ class _FirstBlockState extends State<FirstBlock> {
             child: Padding(
               padding: const EdgeInsets.only(top: 104),
               child: Icon(
-                FontAwesomeIcons.arrowAltCircleDown,
+                FontAwesomeIcons.arrowDown,
                 size: 60,
                 color: Colors.black54,
               ),
