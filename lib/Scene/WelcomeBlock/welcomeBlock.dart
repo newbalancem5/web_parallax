@@ -27,7 +27,7 @@ class WelcomeBlock extends StatelessWidget {
           ),
         ),
         Icon(
-          FontAwesomeIcons.arrowAltCircleDown,
+          FontAwesomeIcons.arrowDown,
           size: 60,
           color: Colors.black38,
         ),

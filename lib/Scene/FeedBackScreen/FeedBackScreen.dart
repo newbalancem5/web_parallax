@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfordev/Scene/FeedBackScreen/components/components.dart';
 import 'package:flutterfordev/Style/_main.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:flutterfordev/const/_const.dart';
 
-class SecondBlock extends StatefulWidget {
+class FeedBackScreen extends StatefulWidget {
   @override
-  _SecondBlockState createState() => _SecondBlockState();
+  _FeedBackScreenState createState() => _FeedBackScreenState();
 }
 
-class _SecondBlockState extends State<SecondBlock> {
+class _FeedBackScreenState extends State<FeedBackScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,18 +30,10 @@ class _SecondBlockState extends State<SecondBlock> {
                     style: FontStyleText.info,
                     textAlign: TextAlign.center,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20),
-                    child: ElevatedButton(
-                      onPressed: () {
-                        launch(LinkSocial.mytg);
-                      },
-                      child: Text(
-                        callme,
-                        style: FontStyleText.text,
-                      ),
-                    ),
+                  SizedBox(
+                    height: 20,
                   ),
+                  FeedBackButton(),
                 ],
               ),
             ),

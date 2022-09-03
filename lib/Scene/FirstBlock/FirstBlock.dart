@@ -4,9 +4,6 @@ import 'package:flutterfordev/const/_const.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../domain/api_clients/api_client.dart';
-// import 'package:flutterfordev/domain/api_clients/api_client.dart';
-
 class FirstBlock extends StatefulWidget {
   @override
   _FirstBlockState createState() => _FirstBlockState();
@@ -38,9 +35,7 @@ class _FirstBlockState extends State<FirstBlock> {
           ),
           Padding(
             padding: EdgeInsets.only(top: displayHeight(context) / 6),
-            child: SizedBox(
-                // child: TeLegramStatsPage(),
-                ),
+            child: SizedBox(),
           ),
           Center(
             child: SizedBox(
@@ -48,14 +43,8 @@ class _FirstBlockState extends State<FirstBlock> {
                 padding: EdgeInsets.only(top: displayHeight(context) / 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  // height: displayHeight(context) / 2,
                   children: [
                     Container(
-                      // orders: ' order-md-1',
-                      // offsets: 'offset-xl-3',
-                      // fit: FlexFit.tight,
-                      // absoluteSizes: true,
-                      // sizes: 'col-1 col-12',
                       child: IconButton(
                         iconSize: 60,
                         splashRadius: 1,
@@ -65,7 +54,6 @@ class _FirstBlockState extends State<FirstBlock> {
                           size: 60,
                         ),
                         onPressed: () {
-                          ApiClient();
                           launchUrl(
                             Uri.parse(LinkSocial.telegram),
                           );
